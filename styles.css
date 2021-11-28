@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5C7A8A;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 1rem;
+    font-size: 1rem;
+    background: #ffff;
+    border: none;
+}
+
+form button {
+    background: #3C337F;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #3C337F;
+    background: white;
+}
+
+
+
+/* Todo list  */
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.todo-item {
+    position: relative;
+    width: 44rem;
+
+}
+
+.todo-input {
+    width: 83%;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+
+
+}
+.check-button, .trash-button {
+    border: none;
+    padding: 1.2rem;
+    bottom: 0.5px;
+    position: absolute
+}
+
+.check-button {
+    background-color: #3A9F6F;
+    cursor: pointer;
+
+}
+
+.trash-button {
+    background-color: #6A0d3F;
+    right: 1.3rem;
+    cursor: pointer;
+}
+
+button i {
+    pointer-events: none;
+}
